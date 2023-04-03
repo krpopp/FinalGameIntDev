@@ -19,6 +19,8 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        Debug.Log(playerName);
         playerName = "Link";
         playerLevel = 0;
     }
