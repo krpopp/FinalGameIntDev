@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     {
 
         Debug.Log(playerName);
-        playerName = "Samus";
+        playerName = "Yellow";
         playerLevel = 0;
     }
 
@@ -33,9 +33,9 @@ public class PlayerScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Enemy")
+        if(collision.name == "Enemy")
         {
-            Destroy(collision.gameObject);
+            //Destroy(gameObject);
             //add code to restart game later
             //reset exp gain?
         }
