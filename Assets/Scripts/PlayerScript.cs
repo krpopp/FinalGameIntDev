@@ -21,7 +21,7 @@ public class PlayerScript : MonoBehaviour
     {
 
         Debug.Log(playerName);
-        playerName = "Link";
+        playerName = "Samus";
         playerLevel = 0;
     }
 
@@ -35,7 +35,7 @@ public class PlayerScript : MonoBehaviour
     {
         if(collision.tag == "Enemy")
         {
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
             //add code to restart game later
             //reset exp gain?
         }
